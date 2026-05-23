@@ -81,39 +81,56 @@ navLinks.forEach(link => {
 });
 
 
-/* ── CONTACT FORM — SEND VIA GMAIL ── */
+/* ── CONTACT FORM  ── */
 function sendMail() {
   const name = document.querySelector('input[name="name"]').value.trim();
   const email = document.querySelector('input[name="email"]').value.trim();
   const subject = document.querySelector('input[name="subject"]').value.trim();
   const message = document.querySelector('textarea[name="message"]').value.trim();
 
-  // Basic validation
+  // Validation
   if (!name || !email || !subject || !message) {
     alert('Please fill in all fields before sending.');
     return;
   }
-
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert('Please enter a valid email address.');
     return;
   }
 
-  const body =
-    "Hello, I am " + name +
-    " and I wanted to connect with you.\r\n\r\n" +
-    "My Email: " + email +
-    "\r\n\r\nMessage:\r\n" + message;
+  // Show sending state
+  const btn = document.querySelector('.form-btn');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
 
-  const gmailURL =
-    "https://mail.google.com/mail/?view=cm&fs=1" +
-    "&to=rimee0201@gmail.com" +
-    "&su=" + encodeURIComponent(subject) +
-    "&body=" + encodeURIComponent(body);
+  const templateParams = { name, email, subject, message };
 
-  window.open(gmailURL, '_blank');
+  emailjs.send('service_t981wlk', 'template_jdl89ix', templateParams)
+    .then(() => {
+      // Success popup
+      showPopup();
+      // Reset form
+      document.querySelector('input[name="name"]').value = '';
+      document.querySelector('input[name="email"]').value = '';
+      document.querySelector('input[name="subject"]').value = '';
+      document.querySelector('textarea[name="message"]').value = '';
+      btn.textContent = 'Send message →';
+      btn.disabled = false;
+    })
+    .catch((error) => {
+      alert('Something went wrong. Please try again.');
+      console.error(error);
+      btn.textContent = 'Send message →';
+      btn.disabled = false;
+    });
 }
 
+function showPopup() {
+  const popup = document.getElementById('success-popup');
+  popup.classList.add('show');
+  setTimeout(() => popup.classList.remove('show'), 4000);
+}
 // FOOTER
 document.getElementById("year").textContent = new Date().getFullYear();
+

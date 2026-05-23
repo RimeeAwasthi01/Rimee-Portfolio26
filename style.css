@@ -1044,6 +1044,14 @@ section:first-of-type {
     border-radius: 99px;
     border: 1px solid var(--p100);
     width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+}
+
+a.ach-badge:hover {
+    background: var(--p100);
+    border-color: var(--p400);
 }
 
 /* ─── ACHIEVEMENT BANNER ─── */
@@ -1165,6 +1173,21 @@ section:first-of-type {
     margin-top: 5px;
 }
 
+.cert-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--p600);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .2s, border-color .2s;
+}
+
+.cert-link:hover {
+    color: var(--p800);
+    border-color: var(--p600);
+}
+
 /* ─── ACADEMIC GROWTH ─── */
 #academic {
     background: var(--white);
@@ -1266,6 +1289,13 @@ section:first-of-type {
     padding: 4px 13px;
     border-radius: 99px;
     border: 1px solid var(--p100);
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+
+a.academic-badge:hover {
+    opacity: 0.8;
 }
 
 .academic-badge.green {
@@ -1426,6 +1456,29 @@ footer {
 
 footer span {
     color: var(--p200);
+}
+
+#success-popup {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background: var(--dark);
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 14px;
+    font-size: 14.5px;
+    font-weight: 500;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .4s ease, transform .4s ease;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+#success-popup.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ─── ANIMATIONS ─── */
@@ -1735,7 +1788,7 @@ footer span {
         font-size: 26px;
     }
 
-        .about-info-card {
+    .about-info-card {
         padding: 20px 16px;
     }
 
@@ -1873,7 +1926,7 @@ footer span {
         inset: -14px;
     }
 
-        .about-info-card {
+    .about-info-card {
         padding: 16px 14px;
     }
 
@@ -1886,7 +1939,7 @@ footer span {
     .info-value {
         font-size: 12px;
     }
-    
+
     .btn-primary,
     .btn-outline {
         font-size: 13px;

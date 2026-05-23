@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init('BFdULCLeag1tg1SXu');</script>
 </head>
 
 <body>
@@ -522,7 +524,11 @@
             <div class="achievement-content">
                 <div class="achievement-label">Major Achievement</div>
                 <div class="achievement-heading">UGC NET-JRF Qualified</div>
-                <div class="achievement-text">Computer Science &amp; Applications — December 2025.</div>
+                <div class="achievement-text">
+                    Computer Science &amp; Applications — December 2025.
+                    <a href="https://drive.google.com/file/d/15pgPO_PPvWEOB3pP3pp_bgE5fqVJTyGJ/view?usp=drive_link"
+                        target="_blank" class="cert-link">View Certificate →</a>
+                </div>
             </div>
             <div class="achievement-stats">
                 <div class="achievement-stat-box">
@@ -548,28 +554,32 @@
                 <div class="ach-title">Python (Basic) Certification</div>
                 <div class="ach-detail">Certified by HackerRank in Python programming fundamentals, covering data
                     types, functions, loops, problem solving, and core programming concepts.</div>
-                <span class="ach-badge">HackerRank · 2026</span>
+                <a class="ach-badge" href="https://www.hackerrank.com/certificates/e5d9ae5d0a13"
+                    target="_blank">HackerRank · 2026</a>
             </div>
             <div class="ach-card reveal">
                 <div class="ach-icon">✅</div>
                 <div class="ach-title">Problem Solving (Basic)</div>
                 <div class="ach-detail">Certified by HackerRank in Problem Solving fundamentals, demonstrating strong
                     analytical and algorithmic thinking skills.</div>
-                <span class="ach-badge">HackerRank · May 2024</span>
+                <a class="ach-badge" href="https://www.hackerrank.com/certificates/85a8d4b6ca6e"
+                    target="_blank">HackerRank · May 2024</a>
             </div>
             <div class="ach-card reveal">
                 <div class="ach-icon">☕</div>
                 <div class="ach-title">Java (Basic) Certification</div>
                 <div class="ach-detail">Certified by HackerRank in Java programming fundamentals, covering core
                     language features and object-oriented concepts.</div>
-                <span class="ach-badge">HackerRank · Mar 2024</span>
+                <a class="ach-badge" href="https://www.hackerrank.com/certificates/ba2d466d7578"
+                    target="_blank">HackerRank · Mar 2024</a>
             </div>
             <div class="ach-card reveal">
                 <div class="ach-icon">🗃️</div>
                 <div class="ach-title">SQL Basics Certification</div>
                 <div class="ach-detail">Certified by HackerRank in SQL Basics, covering queries, filtering,
                     aggregations, and relational database fundamentals.</div>
-                <span class="ach-badge">HackerRank · Nov 2023</span>
+                <a class="ach-badge" href="https://www.hackerrank.com/certificates/f9804c33fa04"
+                    target="_blank">HackerRank · Nov 2023</a>
             </div>
         </div>
     </section>
@@ -601,7 +611,9 @@
                         research practices for academic and scientific publications.</div>
                     <div class="academic-tags">
                         <span class="academic-badge">Jagran College · May 2025</span>
-                        <span class="academic-badge green">6 Days · Certificate</span>
+                        <a class="academic-badge green"
+                            href="https://drive.google.com/file/d/1JtE1WpJ1w6tO1zyjH7MfzQ2vs9uxMssn/view?usp=drive_link"
+                            target="_blank">6 Days · Certificate</a>
                     </div>
                 </div>
             </div>
@@ -615,7 +627,9 @@
                         AI-driven academic and industry projects.</div>
                     <div class="academic-tags">
                         <span class="academic-badge">IEEE · May 2025</span>
-                        <span class="academic-badge green">1 Week · Certificate</span>
+                        <a class="academic-badge green"
+                            href="https://drive.google.com/file/d/1OV8XEKGYNF7UU0SqT5T0zLclJS_CbXRq/view?usp=drive_link"
+                            target="_blank">1 Week · Certificate</a>
                     </div>
                 </div>
             </div>
@@ -637,7 +651,9 @@
                         innovations in IT, business intelligence, and leadership technology.</div>
                     <div class="academic-tags">
                         <span class="academic-badge">JIM Kanpur · Nov 2025</span>
-                        <span class="academic-badge blue">International · Participant</span>
+                        <a class="academic-badge blue"
+                            href="https://drive.google.com/file/d/1XJdrbhkve7i8s_UaAR6xHn1jJMk-cwhJ/view?usp=drive_link"
+                            target="_blank">International · Participant</a>
                     </div>
                 </div>
             </div>
@@ -728,6 +744,9 @@
     </footer>
 
     <script src="main.js"></script>
+    <div id="success-popup">
+        <span>✅ Message sent! I'll get back to you soon.</span>
+    </div>
 </body>
 
 </html>
