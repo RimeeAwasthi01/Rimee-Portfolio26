@@ -28,6 +28,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -35,6 +36,8 @@ body {
     background: var(--bg);
     color: var(--dark);
     line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* ─── SCROLLBAR ─── */
@@ -815,7 +818,7 @@ section:first-of-type {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
     gap: 20px;
 }
 
@@ -909,7 +912,7 @@ section:first-of-type {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: 22px;
 }
 
@@ -1732,6 +1735,21 @@ footer span {
         font-size: 26px;
     }
 
+        .about-info-card {
+        padding: 20px 16px;
+    }
+
+    .info-row {
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .info-value {
+        font-size: 13px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
     /* Stats: stack vertically if they can't fit */
     .stats-row {
         flex-direction: column;
@@ -1759,6 +1777,7 @@ footer span {
     }
 
     /* prevent bleed */
+
 
     /* Skills grid: single column */
     .skills-grid {
@@ -1854,6 +1873,20 @@ footer span {
         inset: -14px;
     }
 
+        .about-info-card {
+        padding: 16px 14px;
+    }
+
+    .info-icon {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+    }
+
+    .info-value {
+        font-size: 12px;
+    }
+    
     .btn-primary,
     .btn-outline {
         font-size: 13px;
