@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rimee Awasthi — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ── NAV ── -->
+    <nav>
+        <a class="nav-logo" href="#home">
+            <div class="nav-avatar">RA</div>
+            <span class="nav-brand">Rimee Awasthi</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#academic">Academic Growth</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="home">
+        <div class="hero-left">
+            <div class="hero-badge"><span class="badge-dot"></span> UGC NET-JRF Qualified · AIR 95</div>
+            <h1 class="hero-name">I am <span>Rimee<br>Awasthi</span></h1>
+            <div class="hero-role-wrap">
+                <div class="role-bar"></div>
+                <p class="hero-role" id="role-text"><span class="cursor"></span></p>
+            </div>
+            <p class="hero-desc">Computer Science educator and researcher with experience in undergraduate teaching,
+                programming, and student mentorship.</p>
+            <div class="stats-row">
+                <div class="stat"><span class="stat-num">1.8</span><span class="stat-label">Yrs teaching</span></div>
+                <div class="stat"><span class="stat-num">99.74</span><span class="stat-label">NET percentile</span>
+                </div>
+                <div class="stat"><span class="stat-num">700+</span><span class="stat-label">Student Mentored</span>
+                </div>
+            </div>
+            <div class="btn-row">
+                <button class="btn-primary"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    Get in touch
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                </button>
+                <button class="btn-outline"
+                    onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About me</button>
+            </div>
+            <div class="socials">
+                <a href="mailto:rimee0201@gmail.com" class="social-btn" title="Email">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rimee-awasthi02" target="_blank" class="social-btn"
+                    title="LinkedIn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <!-- FIX: Updated from placeholder to real GitHub username -->
+                <a href="https://github.com/RimeeAwasthi01" target="_blank" class="social-btn" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-1.04-.01-1.89-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.45-1.11-1.45-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.5 9.5 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.02 1.59 1.02 2.68 0 3.85-2.35 4.69-4.58 4.94.36.31.68.92.68 1.86 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="photo-scene">
+                <div class="photo-ring-2"></div>
+                <div class="photo-ring"></div>
+                <div class="photo-blob">
+                    <img src="assets/my-photo.png" alt="Rimee Awasthi">
+                </div>
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <div class="section-tag">● Who I am</div>
+                <h2 class="section-title">Educator, <span>Researcher</span> &amp; Mentor</h2>
+                <p>
+                    I am Rimee Awasthi, a passionate Computer Science educator and researcher with a strong interest in
+                    technology, innovation, and academic growth. With a background in Computer Applications and teaching
+                    experience in higher education, I enjoy simplifying complex technical concepts and guiding students
+                    toward practical learning.
+                </p>
+                <p>
+                    I qualified UGC NET-JRF in Computer Science and Applications with a 99.74 percentile, reflecting my
+                    dedication toward academics and research. My areas of interest include Data Science, Artificial
+                    Intelligence and Machine Learning.
+                </p>
+                <p>
+                    Beyond teaching, I actively work on technical projects, data analysis, and programming-based
+                    solutions that combine creativity with real-world applications. I aspire to pursue a PhD in Computer
+                    Science and contribute meaningful research in the field of technology and education.
+                </p>
+                <div class="about-tags">
+                    <span class="tag">Teaching</span>
+                    <span class="tag">Research</span>
+                    <span class="tag">Mentorship</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Data Structures</span>
+                </div>
+            </div>
+            <div class="about-info-card reveal">
+                <div class="info-row">
+                    <div class="info-icon"><svg viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg></div>
+                    <div>
+                        <div class="info-label">Full Name</div>
+                        <div class="info-value">Rimee Awasthi</div>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-icon"><svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg></div>
+                    <div>
+                        <div class="info-label">Email</div>
+                        <div class="info-value">rimee0201@gmail.com</div>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-icon"><svg viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg></div>
+                    <div>
+                        <div class="info-label">Location</div>
+                        <div class="info-value">Kanpur, Uttar Pradesh, India</div>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-icon"><svg viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg></div>
+                    <div>
+                        <div class="info-label">Status</div>
+                        <div class="info-value">Open to Teaching &amp; Research roles</div>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-icon"><svg viewBox="0 0 24 24">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg></div>
+                    <div>
+                        <div class="info-label">LinkedIn</div>
+                        <div class="info-value">linkedin.com/in/rimee-awasthi02</div>
+                    </div>
+                    <div>
+                        <div class="info-label">GitHub</div>
+                        <div class="info-value">github.com/RimeeAwasthi01</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section id="experience">
+        <div class="reveal">
+            <div class="section-tag">● Work history</div>
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <p class="section-sub">Professional teaching and mentorship experience in Computer Science.</p>
+        </div>
+        <div class="exp-card reveal">
+            <div class="exp-logo">VS</div>
+            <div>
+                <div class="exp-role">Assistant Professor</div>
+                <div class="exp-org">Dr. Virendra Swarup Institute of Computer Studies, Kanpur</div>
+                <span class="exp-period">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    08 July 2024 — 30 April 2026
+                </span>
+                <ul class="exp-bullets">
+                    <li>Taught C, C++, Operating Systems, DBMS, and Discrete Mathematics to undergraduate students.</li>
+                    <li>Mentored students in programming, practical implementation, and academic projects.</li>
+                    <li>Prepared course materials, conducted assessments, and contributed to academic activities.</li>
+                </ul>
+                <div class="exp-tags">
+                    <span class="tag">C</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Operating Systems</span>
+                    <span class="tag">Database Management Systems</span>
+                    <span class="tag">Discrete Mathematics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── EDUCATION ── -->
+    <section id="education">
+        <div class="reveal">
+            <div class="section-tag">● Academic background</div>
+            <h2 class="section-title">My <span>Education</span></h2>
+            <p class="section-sub">A strong academic foundation in Mathematics and Computer Science.</p>
+        </div>
+        <div class="edu-timeline reveal">
+            <div class="edu-item">
+                <div class="edu-year">2022 – 2024</div>
+                <div class="edu-line">
+                    <div class="edu-dot"></div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-year-mobile">2022 – 2024</span>
+                    <div class="edu-degree">Master of Computer Applications (MCA)</div>
+                    <div class="edu-inst">Dr. Virendra Swarup Institute of Computer Studies (AKTU)</div>
+                    <span class="edu-grade">CGPA: 8.48</span>
+                </div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-year">2019 – 2022</div>
+                <div class="edu-line">
+                    <div class="edu-dot"></div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-year-mobile">2019 – 2022</span>
+                    <div class="edu-degree">Bachelor of Science (Mathematics)</div>
+                    <div class="edu-inst">Brahmanand PG College (CSJMU)</div>
+                    <span class="edu-grade">68.4%</span>
+                </div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-year">2019</div>
+                <div class="edu-line">
+                    <div class="edu-dot"></div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-year-mobile">2019</span>
+                    <div class="edu-degree">Intermediate (Class XII)</div>
+                    <div class="edu-inst">Saraswati Vidya Mandir Inter College, Fatehpur</div>
+                    <span class="edu-grade">76.02%</span>
+                </div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-year">2017</div>
+                <div class="edu-line">
+                    <div class="edu-dot"></div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-year-mobile">2017</span>
+                    <div class="edu-degree">High School (Class X)</div>
+                    <div class="edu-inst">Saraswati Vidya Mandir Inter College, Fatehpur</div>
+                    <span class="edu-grade">85.34%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills">
+        <div class="reveal">
+            <div class="section-tag">● Technical proficiency</div>
+            <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
+            <p class="section-sub">A comprehensive toolkit built through academics, projects, and hands-on teaching.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">💻</div>
+                    <div class="skill-card-title">Programming Languages</div>
+                </div>
+                <div class="skill-pills">
+                    <span class="skill-pill">C</span>
+                    <span class="skill-pill">C++</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">Python</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">🌐</div>
+                    <div class="skill-card-title">Web Technologies</div>
+                </div>
+                <div class="skill-pills">
+                    <span class="skill-pill">HTML</span>
+                    <span class="skill-pill">CSS</span>
+                    <span class="skill-pill">JSP</span>
+                    <span class="skill-pill">Servlets</span>
+                    <span class="skill-pill">JDBC</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">🗄️</div>
+                    <div class="skill-card-title">Databases</div>
+                </div>
+                <div class="skill-pills">
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">Oracle</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">📊</div>
+                    <div class="skill-card-title">Data Science &amp; Analytics</div>
+                </div>
+                <div class="skill-pills">
+                    <span class="skill-pill">NumPy</span>
+                    <span class="skill-pill">Pandas</span>
+                    <span class="skill-pill">Matplotlib</span>
+                    <span class="skill-pill">Seaborn</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">🛠️</div>
+                    <div class="skill-card-title">Tools &amp; Platforms</div>
+                </div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Git</span>
+                    <span class="skill-pill">GitHub</span>
+                    <span class="skill-pill">Eclipse</span>
+                    <span class="skill-pill">Jupyter Notebook</span>
+                    <span class="skill-pill">VS Code</span>
+                    <span class="skill-pill">Apache Tomcat</span>
+                    <span class="skill-pill">MS PowerPoint</span>
+                    <span class="skill-pill">MS Excel</span>
+                    <span class="skill-pill">MS Word</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">📚</div>
+                    <div class="skill-card-title">CS Core Subjects</div>
+                </div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Operating Systems</span>
+                    <span class="skill-pill">DBMS</span>
+                    <span class="skill-pill">Discrete Maths</span>
+                    <span class="skill-pill">Data Structures</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-card-header">
+                    <div class="skill-card-icon">🎯</div>
+                    <div class="skill-card-title">Soft Skills</div>
+                </div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Teaching</span>
+                    <span class="skill-pill">Mentorship</span>
+                    <span class="skill-pill">Curriculum Design</span>
+                    <span class="skill-pill">Problem Solving</span>
+                    <span class="skill-pill">Research</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects">
+        <div class="reveal">
+            <div class="section-tag">● What I've built</div>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <p class="section-sub">Hands-on projects built with real-world web technologies.</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">🎬</div>
+                    <span class="project-year">2026</span>
+                </div>
+                <div class="project-title">Movie EDA Analysis</div>
+                <div class="project-desc">Performed Exploratory Data Analysis (EDA) on movie datasets to identify
+                    trends, ratings, revenue patterns, popularity metrics, and genre-based insights using Python data
+                    analysis libraries and visualization techniques.</div>
+                <div class="project-techs">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">Seaborn</span>
+                    <span class="tech-tag">Jupyter Notebook</span>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">📈</div>
+                    <span class="project-year">2026</span>
+                </div>
+                <div class="project-title">Student Performance EDA</div>
+                <div class="project-desc">Conducted Exploratory Data Analysis (EDA) on student performance datasets to
+                    analyze academic trends, attendance patterns, score distributions, and factors affecting student
+                    outcomes using Python visualization and analytics libraries.</div>
+                <div class="project-techs">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">Seaborn</span>
+                    <span class="tech-tag">EDA</span>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">📝</div>
+                    <span class="project-year">2024</span>
+                </div>
+                <div class="project-title">NoteTaker</div>
+                <div class="project-desc">A web-based application to create, upload, and manage notes efficiently.
+                    Enables easy access and organization of user data with a clean and responsive interface.</div>
+                <div class="project-techs">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JSP</span>
+                    <span class="tech-tag">Servlets</span>
+                    <span class="tech-tag">JDBC</span>
+                    <span class="tech-tag">Apache Tomcat</span>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">💼</div>
+                    <span class="project-year">2024</span>
+                </div>
+                <div class="project-title">Personal Portfolio Website</div>
+                <div class="project-desc">Designed and developed a fully responsive personal portfolio website to
+                    showcase academic background, projects, technical skills, certifications, and achievements with
+                    modern UI/UX design and interactive animations.</div>
+                <div class="project-techs">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive Design</span>
+                    <span class="tech-tag">UI/UX</span>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">🎓</div>
+                    <span class="project-year">2023</span>
+                </div>
+                <div class="project-title">Student Management System</div>
+                <div class="project-desc">A system to manage and maintain student records with features for storing,
+                    updating, and retrieving student information with a structured database backend.</div>
+                <div class="project-techs">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JSP</span>
+                    <span class="tech-tag">Servlets</span>
+                    <span class="tech-tag">JDBC</span>
+                    <span class="tech-tag">Apache Tomcat</span>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">🌸</div>
+                    <span class="project-year">2023</span>
+                </div>
+                <div class="project-title">Flower Website</div>
+                <div class="project-desc">A modern and responsive flower-themed website designed with elegant UI
+                    components, smooth layouts, and visually appealing sections. Developed to showcase flowers,
+                    categories, and aesthetic web design concepts.</div>
+                <div class="project-techs">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ACHIEVEMENTS ── -->
+    <section id="achievements">
+        <div class="reveal">
+            <div class="section-tag">● Recognition &amp; milestones</div>
+            <h2 class="section-title">Achievements &amp; <span>Certifications</span></h2>
+            <p class="section-sub">Recognitions, certifications, and academic milestones reflecting dedication to
+                continuous learning, research excellence, and professional growth in Computer Science.</p>
+        </div>
+
+        <!-- UGC NET Achievement Banner -->
+        <div class="achievement-banner reveal">
+            <div class="achievement-circle circle-1"></div>
+            <div class="achievement-circle circle-2"></div>
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-content">
+                <div class="achievement-label">Major Achievement</div>
+                <div class="achievement-heading">UGC NET-JRF Qualified</div>
+                <div class="achievement-text">Computer Science &amp; Applications — December 2025.</div>
+            </div>
+            <div class="achievement-stats">
+                <div class="achievement-stat-box">
+                    <div class="achievement-stat-number">99.74</div>
+                    <div class="achievement-stat-label">Percentile</div>
+                </div>
+                <div class="achievement-stat-box">
+                    <div class="achievement-stat-number">95</div>
+                    <div class="achievement-stat-label">All India Rank</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications heading -->
+        <div class="academic-heading reveal">
+            <span></span>
+            <h3>Certifications</h3>
+        </div>
+
+        <div class="ach-grid">
+            <div class="ach-card reveal">
+                <div class="ach-icon">🐍</div>
+                <div class="ach-title">Python (Basic) Certification</div>
+                <div class="ach-detail">Certified by HackerRank in Python programming fundamentals, covering data
+                    types, functions, loops, problem solving, and core programming concepts.</div>
+                <span class="ach-badge">HackerRank · 2026</span>
+            </div>
+            <div class="ach-card reveal">
+                <div class="ach-icon">✅</div>
+                <div class="ach-title">Problem Solving (Basic)</div>
+                <div class="ach-detail">Certified by HackerRank in Problem Solving fundamentals, demonstrating strong
+                    analytical and algorithmic thinking skills.</div>
+                <span class="ach-badge">HackerRank · May 2024</span>
+            </div>
+            <div class="ach-card reveal">
+                <div class="ach-icon">☕</div>
+                <div class="ach-title">Java (Basic) Certification</div>
+                <div class="ach-detail">Certified by HackerRank in Java programming fundamentals, covering core
+                    language features and object-oriented concepts.</div>
+                <span class="ach-badge">HackerRank · Mar 2024</span>
+            </div>
+            <div class="ach-card reveal">
+                <div class="ach-icon">🗃️</div>
+                <div class="ach-title">SQL Basics Certification</div>
+                <div class="ach-detail">Certified by HackerRank in SQL Basics, covering queries, filtering,
+                    aggregations, and relational database fundamentals.</div>
+                <span class="ach-badge">HackerRank · Nov 2023</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ACADEMIC GROWTH ── -->
+    <section id="academic">
+        <div class="reveal">
+            <div class="section-tag">● Growth &amp; learning</div>
+            <h2 class="section-title">Academic <span>Growth</span></h2>
+            <p class="section-sub">Faculty development programs, conferences, and academic events that have shaped my
+                professional growth.</p>
+        </div>
+
+        <div class="academic-heading reveal">
+            <span></span>
+            <h3>Faculty Development Programs</h3>
+        </div>
+
+        <div class="academic-wrapper">
+            <div class="academic-card reveal">
+                <div class="academic-icon">📘</div>
+                <div class="academic-content">
+                    <div class="academic-title">6-Day Faculty Development Program on Research Methodology &amp;
+                        Publications</div>
+                    <div class="academic-org">Research and Development Cell &amp; Jagran College of Arts, Science &amp;
+                        Commerce, Kanpur</div>
+                    <div class="academic-desc">Attended a 6-Day Faculty Development Program focused on research
+                        methodology, academic writing, publication ethics, research paper structuring, and modern
+                        research practices for academic and scientific publications.</div>
+                    <div class="academic-tags">
+                        <span class="academic-badge">Jagran College · May 2025</span>
+                        <span class="academic-badge green">6 Days · Certificate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="academic-card reveal">
+                <div class="academic-icon">🤖</div>
+                <div class="academic-content">
+                    <div class="academic-title">FDP — Advanced AI Development &amp; Research Challenges</div>
+                    <div class="academic-org">Dept. of IT &amp; IEEE Student Branch, REC Banda</div>
+                    <div class="academic-desc">A one-week intensive Faculty Development Program focused on advanced AI
+                        development methodologies, current research challenges, emerging tools, and best practices in
+                        AI-driven academic and industry projects.</div>
+                    <div class="academic-tags">
+                        <span class="academic-badge">IEEE · May 2025</span>
+                        <span class="academic-badge green">1 Week · Certificate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="academic-heading reveal">
+            <span></span>
+            <h3>Conferences &amp; Seminars</h3>
+        </div>
+
+        <div class="academic-wrapper">
+            <div class="academic-card reveal">
+                <div class="academic-icon">🌐</div>
+                <div class="academic-content">
+                    <div class="academic-title">8th International Conference on Next-Gen IT Solutions</div>
+                    <div class="academic-org">Jagran Institute of Management, Kanpur</div>
+                    <div class="academic-desc">Participated in the "8th International Conference on Next-Gen IT
+                        Solutions for Business Excellence and Leadership" — an international forum for sharing
+                        innovations in IT, business intelligence, and leadership technology.</div>
+                    <div class="academic-tags">
+                        <span class="academic-badge">JIM Kanpur · Nov 2025</span>
+                        <span class="academic-badge blue">International · Participant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+        <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto 56px;">
+            <div class="section-tag" style="margin:0 auto 16px;">● Let's connect</div>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-sub" style="margin:0 auto;">Whether it's a research collaboration, teaching opportunity,
+                or just a hello — I'd love to hear from you.</p>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info reveal">
+                <a href="mailto:rimee0201@gmail.com" class="contact-item">
+                    <div class="contact-item-icon"><svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg></div>
+                    <div>
+                        <div class="contact-item-label">Email</div>
+                        <div class="contact-item-value">rimee0201@gmail.com</div>
+                    </div>
+                </a>
+                <a href="tel:+919695399009" class="contact-item">
+                    <div class="contact-item-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg></div>
+                    <div>
+                        <div class="contact-item-label">Phone</div>
+                        <div class="contact-item-value">+91 96953 99009</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/rimee-awasthi02" target="_blank" class="contact-item">
+                    <div class="contact-item-icon"><svg viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg></div>
+                    <div>
+                        <div class="contact-item-label">LinkedIn</div>
+                        <div class="contact-item-value">linkedin.com/in/rimee-awasthi02</div>
+                    </div>
+                </a>
+                <div class="contact-item" style="cursor:default;">
+                    <div class="contact-item-icon"><svg viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg></div>
+                    <div>
+                        <div class="contact-item-label">Location</div>
+                        <div class="contact-item-value">Kanpur, Uttar Pradesh, India</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form reveal">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label>Your name</label>
+                        <input type="text" name="name" placeholder="e.g. Priya Sharma" required />
+                    </div>
+                    <div class="form-field">
+                        <label>Email address</label>
+                        <input type="email" name="email" placeholder="you@example.com" required />
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label>Subject</label>
+                    <input type="text" name="subject" placeholder="e.g. Research collaboration" required />
+                </div>
+                <div class="form-field">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="button" class="form-btn" onclick="sendMail()">Send message →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+        <p>Designed & built with care · Rimee Awasthi · <span id="year"></span></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
