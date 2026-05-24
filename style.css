@@ -1312,72 +1312,64 @@ a.academic-badge:hover {
 
 /* ─── CONTACT ─── */
 #contact {
-    background: var(--white);
+    background: var(--bg);
 }
 
-.contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 56px;
-    align-items: start;
-}
-
-.contact-info {
+.contact-center {
+    max-width: 560px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 }
 
-.contact-item {
+.contact-icon-row {
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 16px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 16px 20px;
-    text-decoration: none;
-    transition: border-color .2s, transform .15s;
 }
 
-.contact-item:hover {
-    border-color: var(--p400);
-    transform: translateX(4px);
-}
-
-.contact-item-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 11px;
-    background: var(--p50);
-    border: 1px solid var(--p100);
+.contact-icon-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 1.5px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--p600);
-    flex-shrink: 0;
+    text-decoration: none;
+    transition: border-color .2s, background .2s, transform .15s;
 }
 
-.contact-item-icon svg {
-    width: 18px;
-    height: 18px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+.contact-icon-btn:hover {
+    border-color: var(--p400);
+    background: var(--p50);
+    transform: translateY(-3px);
 }
 
-.contact-item-label {
-    font-size: 11.5px;
+.contact-icon-btn svg {
+    width: 19px;
+    height: 19px;
+}
+
+.contact-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-divider span {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+.contact-divider p {
+    font-size: 12.5px;
     color: var(--light);
-    margin-bottom: 2px;
-}
-
-.contact-item-value {
-    font-size: 14.5px;
-    font-weight: 500;
-    color: var(--dark);
+    white-space: nowrap;
 }
 
 .contact-form {
@@ -1412,7 +1404,7 @@ a.academic-badge:hover {
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     color: var(--dark);
-    background: var(--bg);
+    background: var(--white);
     outline: none;
     transition: border-color .2s;
 }
@@ -1439,6 +1431,7 @@ a.academic-badge:hover {
     font-weight: 500;
     cursor: pointer;
     transition: background .2s;
+    width: 100%;
 }
 
 .form-btn:hover {
@@ -1768,6 +1761,7 @@ footer span {
     .form-row {
         grid-template-columns: 1fr;
     }
+
 }
 
 /* ── 600px: large phones ── */
@@ -1873,6 +1867,7 @@ footer span {
     .contact-item {
         align-items: flex-start;
     }
+
 
     /* Exp card */
     .exp-card {
