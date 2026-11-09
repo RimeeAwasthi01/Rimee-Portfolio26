@@ -610,6 +610,7 @@ section:first-of-type {
     gap: 24px;
     align-items: start;
     max-width: 820px;
+    margin-bottom: 20px;
 }
 
 .exp-logo {

@@ -4,7 +4,7 @@
 
 /* ── TYPEWRITER ── */
 const roles = [
-  "Assistant Professor",
+  "PhD Scholar",
   "CS Researcher",
   "Student Mentor",
   "UGC NET-JRF Holder",
